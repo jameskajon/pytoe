@@ -42,7 +42,7 @@ def is_win(board):
 	trans_board = tuple(zip(*board)) # the transposed (col maj) board
 	diag_list = tuple(zip(*((r[i],r[len(r)-i-1]) for i,r in enumerate(board))))
 	for b in (board, trans_board, diag_list):
-		if any((set(r) in ({'X'},{'Y'}) for r in b)):
+		if any((set(r) in ({'X'},{'O'}) for r in b)):
 			return True
 
 def is_tie(board):
