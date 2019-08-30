@@ -32,9 +32,9 @@ def get_player_pos(player, board):
 			if get_at_pos(coord, board) == ' ':
 				return coord
 			else:
-				print("Ivalid: That place is taken. Chose another.")
+				print("Invalid: That place is taken. Chose another.")
 		else:
-			print("Ivalid: Given place was not a number in the range or 1-9. Chose another.")
+			print("Invalid: Given place was not a number in the range or 1-9. Chose another.")
 
 # return boolean, last player to place must be winner
 def is_win(board):
